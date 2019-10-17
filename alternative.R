@@ -1,6 +1,10 @@
 # This is a function- / loop-free alternative offered by
 # Jordan Ryda (@jryda_) - thanks!
 
+library(tidyr)
+library(dplyr)
+library(stringr)
+
 mydata %>% 
   pivot_longer(-sample, names_to = "species") %>% 
   mutate(species = str_extract(species, "(?<=\\.).*")) %>% 
