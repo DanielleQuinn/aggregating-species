@@ -1,3 +1,6 @@
+library(magrittr)
+library(dplyr)
+
 mydata <- data.frame(sample = LETTERS[1:5],
                      lake.chub = c(1, 1, 0, 1, 0),
                      creek.chub = c(1, 0, 0, 0, 0),
